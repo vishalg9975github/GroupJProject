@@ -2,7 +2,7 @@ package com.velocity.service;
 
 import java.util.List;
 
-import com.velocity.controller.Reimbursement;
+import com.velocity.model.Reimbursement;
 
 
 

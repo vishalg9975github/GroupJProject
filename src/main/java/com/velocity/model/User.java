@@ -1,4 +1,4 @@
-package com.velocity.controller;
+package com.velocity.model;
 
 import java.util.List;
 
