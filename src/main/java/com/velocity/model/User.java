@@ -97,7 +97,7 @@ public class User {
 				+ ", gender=" + gender + ", birthday=" + birthday + ", userType=" + userType + "]";
 	}
 	
-
+// Update
 	
 /*
 	public List<Orders> getOrdersList() {
