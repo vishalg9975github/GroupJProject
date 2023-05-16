@@ -1,9 +1,10 @@
 package com.velocity.model;
-
 import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -77,14 +78,6 @@ public class User {
 	public void setOrderlist(List<Orders> orderlist) {
 		this.orderlist = orderlist;
 	}
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", realName=" + realName + ", password=" + password
-				+ ", gender=" + gender + ", birthday=" + birthday + ", userType=" + userType + "]";
-	}
-	
-	
-
-
-
+  
+ 
 }
