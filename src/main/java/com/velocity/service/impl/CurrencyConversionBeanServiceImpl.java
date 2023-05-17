@@ -29,5 +29,9 @@ public class CurrencyConversionBeanServiceImpl implements CurrencyConversionBean
 
 	
 	}
+		@Override
+	public void deleteById(Long id) {
+		conversionRepository.deleteById(id);
+	}
 
 }
