@@ -23,10 +23,12 @@ public class CurrencyConversionBeanController {
 	public ResponseEntity<CurrencyConversionBean> updateCurrencyConversionBeanService( @RequestBody  CurrencyConversionBean currencyConversionBean)
 	{
 		CurrencyConversionBean currencyConversionBean2= currencyConversionBeanService.updateCurrencyConversionBean(currencyConversionBean);
-		return ResponseEntity.ok().body(currencyConversionBean2);
-				
-		
+		return ResponseEntity.ok().body(currencyConversionBean2);	
 		
 	}
 
+	@DeleteMapping("/deleteconverter/{id}")
+	public void deleteById(@PathVariable ("id") Long id) {
+		conversionService.deleteById(id);
+}
 }
