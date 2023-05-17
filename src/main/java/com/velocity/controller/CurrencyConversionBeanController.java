@@ -18,7 +18,7 @@ public class CurrencyConversionBeanController {
 	@Autowired
 	private CurrencyConversionBeanService currencyConversionBeanService;
 	
-	
+	/* Author:- Anushka */
 	@PutMapping("/updateCurrencyConversion")
 	public ResponseEntity<CurrencyConversionBean> updateCurrencyConversionBeanService( @RequestBody  CurrencyConversionBean currencyConversionBean)
 	{
@@ -27,6 +27,7 @@ public class CurrencyConversionBeanController {
 		
 	}
 
+	/* Author:- Madhurima */
 	@DeleteMapping("/deleteconverter/{id}")
 	public void deleteById(@PathVariable ("id") Long id) {
 		conversionService.deleteById(id);
