@@ -32,4 +32,19 @@ public class CurrencyConversionBeanController {
 	public void deleteById(@PathVariable ("id") Long id) {
 		conversionService.deleteById(id);
 }
+	
+	/* Author Vishal*/
+	@GetMapping("/getCurrencyConversion")
+	public List<CurrencyConversionBean> getCurrencyConversionBean(){
+		List<CurrencyConversionBean> currencyConversionBean=currencyConversionBeanService.getCurrencyConversionBean();
+		return currencyConversionBean;
+	}
+	/* Author Vishal*/
+	@PostMapping("/saveCurrencyConversion")
+	public ResponseEntity<CurrencyConversionBean> addCurrencyConversionBean(@RequestBody CurrencyConversionBean currencyConversionBean) {
+		CurrencyConversionBean currencyB=currencyConversionBeanService.addCurrencyConversionBean(currencyConversionBean);
+		return ResponseEntity.ok().body(currencyB);
+		
+	}
+
 }
