@@ -14,7 +14,6 @@ import com.velocity.service.CurrencyConversionBeanService;
 public class CurrencyConversionBeanController {
 	
 	//inject service 
-	
 	@Autowired
 	private CurrencyConversionBeanService currencyConversionBeanService;
 	
