@@ -27,13 +27,27 @@ public class CurrencyConversionBeanServiceImpl implements CurrencyConversionBean
 		currencyConversionBean2.setPort(currencyConversionBean.getPort());
 
 		return currencyConversionBeanRepository.save(currencyConversionBean2);
-
-	
 	}
+	
 	/*  Author:- Madhu */
 		@Override
 	public void deleteById(Long id) {
 		conversionRepository.deleteById(id);
+	}
+	
+	/* Author Vishal */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<CurrencyConversionBean> getCurrencyConversionBean() {
+		Iterable<CurrencyConversionBean> currencyConversionBean = currencyConversionBeanRepository.findAll();
+		return (List<CurrencyConversionBean>) currencyConversionBean;
+	}
+
+	/* Author Vishal */
+	@Override
+	public CurrencyConversionBean addCurrencyConversionBean(CurrencyConversionBean currencyConversionBean) {
+		CurrencyConversionBean currencyConversionBean1 = currencyConversionBeanRepository.save(currencyConversionBean);
+		return currencyConversionBean1;
 	}
 
 }
