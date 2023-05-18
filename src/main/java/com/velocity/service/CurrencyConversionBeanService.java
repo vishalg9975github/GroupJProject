@@ -6,4 +6,6 @@ public interface CurrencyConversionBeanService {
 	
 	public CurrencyConversionBean updateCurrencyConversionBean(CurrencyConversionBean currencyConversionBean);
 
+	/* Author Madhurima */
+	public void deleteById(Long id);
 }
